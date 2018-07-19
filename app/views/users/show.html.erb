@@ -1,0 +1,11 @@
+<br>
+<h1>User Profile</h1>
+<br>
+Name: <%= @user.name %>
+<br>
+
+Role: <% if @user.is_admin? == true %>
+      Admin
+      <% else %>
+      false
+      <% end %>

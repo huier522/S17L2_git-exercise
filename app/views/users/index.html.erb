@@ -11,7 +11,9 @@
     <% @users.each do |user| %>
       <tr>
         <td><%= user.name %></td>
-        <td><%= user.role %></td>
+        <% if user.is_admin? == true %>
+          <td>admin</td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
